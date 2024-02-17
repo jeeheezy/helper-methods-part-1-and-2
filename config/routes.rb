@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :directors
   # get "/", controller: "movies", action: "index"
   root "movies#index"
 
