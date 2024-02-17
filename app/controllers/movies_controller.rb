@@ -18,7 +18,7 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find_by(id: params[:id])
-    # can also do Movie.fin(params[:id]), which is passed in an integer to search within the primary key
+    # can also do Movie.find(params[:id]), which is passed in an integer to search within the primary key
     # same as doing Movie.where(id: params[:id]).first
   end
 
